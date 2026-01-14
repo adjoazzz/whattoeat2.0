@@ -8,14 +8,16 @@ html, body {
   font-family: 'InterDisplay', sans-serif;
 }
 .signup-container {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 20px 40px;
+  justify-content: center;
+  padding: 20px;
   background: #ffffff;
   box-sizing: border-box;
 }
@@ -23,7 +25,7 @@ html, body {
 .signup-card {
   background: transparent;
   border-radius: 0;
-  padding: 40px 0;
+  padding: 20px 0;
   width: 100%;
   max-width: 420px;
   box-shadow: none;
@@ -37,9 +39,9 @@ html, body {
 /* Fixed logo in the top-left corner */
 .logo-top-left {
   position: fixed;
-  top: 16px;
-  left: 16px;
-  width: 200px;
+  top: 12px;
+  left: 12px;
+  width: 120px;
   height: auto;
   z-index: 1200;
   image-rendering: -webkit-optimize-contrast;
@@ -62,8 +64,8 @@ html, body {
 /* Tomato hero image centered at the top of the page */
 .hero-tomato {
   display: block;
-  margin: 0 auto 40px auto;
-  max-width: 160px;
+  margin: 0 auto 20px auto;
+  max-width: 80px;
   width: 100%;
   height: auto;
   image-rendering: -webkit-optimize-contrast;
@@ -73,8 +75,8 @@ html, body {
 /* Headings use Recoletta font */
 .signup-card h1, .signup-card h2, .signup-card h3 {
   font-family: 'Recoletta', serif;
-  margin: 0 0 12px 0;
-  font-size: 2.25rem;
+  margin: 0 0 8px 0;
+  font-size: 1.6rem;
   text-align: center;
   color: #213547;
   width: 100%;
@@ -94,21 +96,21 @@ html, body {
 }
 
 .subtitle {
-  font-size: 1.25rem !important;
-  line-height: 1.6;
+  font-size: 1rem !important;
+  line-height: 1.5;
   text-align: center;
   color: #444;
-  margin: 0 0 32px 0;
   font-family: 'InterDisplay', sans-serif;
-  width: 100%;
+  width: 80%;
+  max-width: 420px;
 }
 
 
 .signup-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
+  gap: 16px;
+  width: 80%;
   max-width: 420px;
   margin: 0 auto;
   align-items: center;
@@ -190,7 +192,7 @@ html, body {
 .divider {
   display: flex;
   align-items: center;
-  margin: 24px 0;
+  margin: 16px 0;
   color: #999;
 }
 
@@ -241,14 +243,14 @@ html, body {
 
 .login-link {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 16px;
   color: #666;
   font-size: 0.9rem;
   font-family: 'InterDisplay', sans-serif;
 }
 
 .login-link a {
-  color: #646cff;
+  color: #F1AB1A;
   text-decoration: none;
   font-weight: 500;
 }

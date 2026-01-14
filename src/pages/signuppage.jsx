@@ -85,7 +85,7 @@ function SignUpPage({ onSignUpSuccess }) {
 
       <div className="signup-card">
         <h1>Let's plan your meals for the week</h1>
-        <p className="subtitle">We’ll start by learning what you actually enjoy eating, so your plan feels like you</p>
+        <p className="subtitle">Create an account and let's get started</p>
         
         <form onSubmit={handleSubmit} className="signup-form">
           <div className="form-group">
@@ -114,20 +114,6 @@ function SignUpPage({ onSignUpSuccess }) {
               className={errors.password ? 'error' : ''}
             />
             {errors.password && <span className="error-message">{errors.password}</span>}
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password</label>
-            <input
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              placeholder="Confirm your password"
-              className={errors.confirmPassword ? 'error' : ''}
-            />
-            {errors.confirmPassword && <span className="error-message">{errors.confirmPassword}</span>}
           </div>
 
           <button type="submit" className="signup-btn">
