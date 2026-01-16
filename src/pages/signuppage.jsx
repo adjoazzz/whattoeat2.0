@@ -41,13 +41,6 @@ function SignUpPage({ onSignUpSuccess }) {
       newErrors.password = 'Password must be at least 6 characters';
     }
     
-    // Confirm password validation
-    if (!formData.confirmPassword) {
-      newErrors.confirmPassword = 'Please confirm your password';
-    } else if (formData.password !== formData.confirmPassword) {
-      newErrors.confirmPassword = 'Passwords do not match';
-    }
-    
     return newErrors;
   };
 
@@ -78,14 +71,16 @@ function SignUpPage({ onSignUpSuccess }) {
 
   return (
     <div className="signup-container">
-      <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" />
+      {/* <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" /> */}
 
       {/* Tomato hero image at the top of the page */}
-      <img src="/images/tomatoes%20img.png" alt="Tomatoes" className="hero-tomato" />
+      {/* <img src="/images/tomatoes%20img.png" alt="Tomatoes" className="hero-tomato" /> */}
 
       <div className="signup-card">
-        <h1>Let's plan your meals for the week</h1>
-        <p className="subtitle">Create an account and let's get started</p>
+        <h1>Sign up and let's get started</h1>
+        <p className="login-link subtitle">
+          Already have an account? <a href="#">Log in</a>
+        </p>
         
         <form onSubmit={handleSubmit} className="signup-form">
           <div className="form-group">
@@ -134,10 +129,6 @@ function SignUpPage({ onSignUpSuccess }) {
           </svg>
           Continue with Google
         </button>
-
-        <p className="login-link">
-          Already have an account? <a href="#">Log in</a>
-        </p>
       </div>
     </div>
   );

@@ -10,10 +10,8 @@
   border-radius: 50%;
   margin-right: 6px;
   vertical-align: middle;
-  /* border: 2px solid #fff; */
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.12); */
 }
-/* .wide-display styles moved here for correct selector usage */
+
 .wide-display {
   max-width: 900px;
   width: 100%;
@@ -24,6 +22,7 @@
 /* Headings use Recoletta font */
 .addmeals-card h1, .addmeals-card h2, .addmeals-card h3 {
   font-family: 'Recoletta', serif;
+  font-size: 1.6rem;
 }
 /* Responsive styles */
 @media (max-width: 600px) {

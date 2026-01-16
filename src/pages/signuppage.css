@@ -36,13 +36,12 @@ html, body {
   align-items: center;
 }
 
-/* Fixed logo in the top-left corner */
 .logo-top-left {
   position: fixed;
   top: 12px;
   left: 12px;
-  width: 120px;
-  height: auto;
+  width: 60px;  /* Changed from 120px */
+  height: 60px;
   z-index: 1200;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -212,7 +211,7 @@ html, body {
 }
 
 .google-btn {
-  width: 100%;
+  width: 80%;
   padding: 12px;
   display: flex;
   align-items: center;

@@ -1,12 +1,4 @@
-  /* min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background: #ffffff;
-} */
+
 .selectmeal-container {
   min-height: 100vh;
   width: 100%;
@@ -14,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
   background: #ffffff;
   font-family: 'InterDisplay', sans-serif;
 }
@@ -50,24 +42,14 @@
   image-rendering: crisp-edges;
 }
 
-  /* margin: 0 0 8px 0;
-  font-size: 2rem;
-  text-align: center;
-  color: #213547;
-  font-family: 'Recoletta', serif;
-  width: 100%;
-  white-space: nowrap;
-  overflow: visible;
-} */
-.selectmeal-card h1, .selectmeal-card h2, .selectmeal-card h3 {
+
+.selectmeal-card h1, .selectmeal-card h2 {
   font-family: 'Recoletta', serif;
   margin: 0 0 8px 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: #213547;
   width: 100%;
-  white-space: nowrap;
-  overflow: visible;
 }
 /* Responsive styles */
 @media (max-width: 600px) {
@@ -85,18 +67,19 @@
 }
 
 .subtitle {
+  font-size: 1rem !important;
+  line-height: 1.5;
   text-align: center;
-  color: #666;
-  margin: 0 0 32px 0;
+  color: #444;
   font-family: 'InterDisplay', sans-serif;
-  font-size: 1rem;
+  max-width: 6000px;
 }
 
 .meals-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 12px;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 768px) {
@@ -106,7 +89,7 @@
 }
 
 .meal-item {
-  padding: 20px;
+  padding: 12px;
   background: #f9f9f9;
   border: 2px solid #f1f1f1;
   border-radius: 12px;
@@ -122,25 +105,28 @@
 .meal-content {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .meal-left {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .meal-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0; 
+  max-width: 160px;
 }
 
 .checkbox-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .meal-checkbox {
@@ -177,7 +163,7 @@
 }
 
 .meal-name {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #213547;
   margin: 0;
@@ -188,6 +174,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: 28px;
 }
 
 .time-input {
@@ -249,12 +236,12 @@
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .cancel-btn {
   width: 120px;
-  height: 40px;
+  height: 30px;
   padding: 0;
   font-size: 1rem;
   font-weight: 600;
@@ -274,7 +261,7 @@
 
 .continue-btn {
   width: 120px;
-  height: 40px;
+  height: 25px;
   padding: 0;
   font-size: 1rem;
   font-weight: 600;

@@ -134,9 +134,9 @@ function AddMealsPage({ selectedMealTypes, onContinue }) {
 
   return (
     <div className="addmeals-container">
-      <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" />
+      {/* <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" />
 
-      <img src="/images/Plan%20Your%20Week%20with%20Avocados%201.png" alt="Plan Your Week with Avocados" className="hero-bread" />
+      <img src="/images/Plan%20Your%20Week%20with%20Avocados%201.png" alt="Plan Your Week with Avocados" className="hero-bread" /> */}
 
       <div className="addmeals-card">
         <h1>What meals do you usually eat?</h1>

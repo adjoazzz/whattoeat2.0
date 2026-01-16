@@ -54,9 +54,9 @@ function SelectMealPage({ onContinue }) {
 
   return (
     <div className="selectmeal-container">
-      <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" />
+      {/* <img src="/images/Group%201.png" alt="WhatToEat Logo" className="logo-top-left" /> */}
 
-      <img src="/images/bread%20image.png" alt="Bread" className="hero-bread" />
+      {/* <img src="/images/bread%20image.png" alt="Bread" className="hero-bread" /> */}
 
       <div className="selectmeal-card">
         <h1>When do you usually eat during the day?</h1>
